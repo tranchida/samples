@@ -28,7 +28,7 @@ func main() {
 
 	db.Update(func(tx *bolt.Tx) error {
 
-		b, err := tx.CreateBucketIfNotExists([]byte("MyBucket2"))
+		b, err := tx.CreateBucketIfNotExists([]byte("MyBucket"))
 		if err != nil {
 			panic(err)
 		}
